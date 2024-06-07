@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Bean Cafe</title>
+    <link rel="stylesheet" href="stylep.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@200..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href=""><img id="navalogo" src="BeansCoffelogo.png" alt=""></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="Home.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="promotion.html" class="nav-link">Promotion</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="order.html" class="nav-link">Order Online</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="offer">
+        <h2>Offer</h2>
+        <div class="offer_container">
+
+            <div class="offer_container_text">
+
+                <h3>Up To 50% Off</h3>
+                <p>All Our Cafe, We Take Pride in Providing Our Customers With The Best Coffee Around. Our
+                    Carefully-Sclocked Coffees Come From Some Of The Most Renowned Coffee Growing Regions In The
+                    World, Ensuring That Every Cup You Enjoy at Binary Bean Cafe is bursting with Flavor and
+                    Aroma.</p>
+                <a href="shopping.html" class="shop-now-btn">Shop Now</a>
+            </div>
+            <img src="coffeeoffer.jpg" alt="coffe offer">
+        </div>
+        </div>
+    </section>
+
+    <section class="recommended">
+        <div class="recommended_container">
+            <h2>Recommended</h2>
+
+            <div class="carousel">
+                <div class="arrow left-arrow">&lt;</div>
+                <div class="recommended_wrapper">
+                    <div class="recommended_containers">
+                        <div class="recommended_item">
+                            <div class="item">
+                                <img src="ARABICA.png" alt="Arabica Coffee">
+                                <h3>Arabica</h3>
+                                <div class="price">RM 15.00</div>
+                                <a href="order.html" class="trolley-icon"><img src="shoppingcart.png"
+                                        alt="Order Now"></a>
+                            </div>
+                        </div>
+                        <div class="recommended_item">
+                            <img src="DARKROAST.png" alt="Dark Roast Coffee">
+                            <h3>Dark Roast</h3>
+                            <div class="price">RM 15.00</div>
+                            <a href="order.html" class="trolley-icon"><img src="shoppingcart.png" alt="Order Now"></a>
+
+
+                        </div>
+                        <div class="recommended_item">
+                            <img src="HOUSEBLEND.png" alt="House Blend Coffee">
+                            <h3>House Blend </h3>
+                            <div class="price">RM 15.00</div>
+                            <a href="order.html" class="trolley-icon"><img src="shoppingcart.png" alt="Order Now"></a>
+
+                        </div>
+                        <div class="recommended_item">
+                            <img src="DARK.png" alt="Dark Roast Coffee">
+                            <h3>Dark</h3>
+                            <div class="price">RM 15.00</div>
+                            <a href="order.html" class="trolley-icon"><img src="shoppingcart.png" alt="Order Now"></a>
+
+                        </div>
+                        <div class="recommended_item">
+                            <img src="ROBUSTA.png" alt="Robusta Coffee">
+                            <h3>Robusta</h3>
+                            <div class="price">RM 15.00</div>
+                            <a onclick="addToCart('Robusta', 15.00)" class="trolley-icon"><img src="shoppingcart.png" alt="Order Now"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow right-arrow">&gt;</div>
+            </div>
+    </section>
+
+
+
+    <section class="upcoming-events">
+        <div class="upcoming-events-content">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Coffee Tasting</h3>
+                <p>Date: June 15, 2024</p>
+                <p>Join us for a delightful evening of coffee tasting. Experience a variety of our finest blends and
+                    learn about the art of coffee making.</p>
+            </div>
+            <div class="event">
+                <h3>Barista Workshop</h3>
+                <p>Date: July 20, 2024</p>
+                <p>Learn the skills of a professional barista in our hands-on workshop. Perfect for coffee enthusiasts
+                    and aspiring baristas.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <img id="footlogo" src="BeansCoffelogo.png" alt="">
+        </div>
+        <div class="contact-info">
+            <h1>Contact us:</h1>
+            <a href=""><img src="wslogo.png" alt="whatsapplogo">+60 11 2341 8978</a><br>
+            <a href=""><img src="gmaillogo.png" alt="gmaillogo">binarybeancafe@gmail.com</a> <br>
+            <a href=""><img src="locationlogo.png" alt="mapslgo">12345,Taman Ali,JLN Abu
+                2300 Gombak,Selanggor</a>
+        </div>
+        <div class="contact-info">
+            <h1>Follow us on:</h1>
+            <p>@binarybeancafe</p>
+            <div id="medialogo">
+                <a href=""><img src="tiktoklogo.png" alt="tiktoklogo"></a>
+                <a href=""><img src="iglogo.png" alt="instalogo"></a>
+
+            </div>
+            <p style="font-style: italic; ">Copyright © Exceptional 2024 All right reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+body {
+    background-color: #503C3C;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+    /*------ navigation style-------- */
+nav {
+        background-color: #FFF2D7;
+        display: flex;
+        justify-content: center;
+        padding: 0.5%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#navalogo {
+        width: 80px;
+}
+.navbar {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.navbar ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+}
+.navbar li {
+        margin: 0 15px;
+}
+.navbar a {
+        text-decoration: none;
+        color: #000; 
+        font-size: 15px; 
+        transition: color 0.3s; 
+}
+.navbar a:hover, .navbar a.active {
+        color: #A0522D; 
+}
+
+/* ----------Hamburger Navigation-------------- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 25px;
+    background: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+footer {
+        background-color: #FFF2D7;
+        display: flex;
+        justify-content: center;
+        width: 100%
+}
+footer div {
+        align-items: center;
+}
+#footlogo {
+        width: 100px; 
+        height: auto; 
+        margin-right: auto; 
+        margin-top: 50px; 
+}
+footer h1 {
+        font-size: 20px;
+}
+    /*---------------- Styles for the contact info ------------*/
+footer .contact-info {
+        width: 300px; 
+        margin-right: 20px; 
+        border-left: 2px solid black;
+        padding: 5px; 
+}
+footer .contact-info h1 {
+        font-size: 18px; 
+        margin-bottom: 5px; 
+}
+footer .contact-info a {
+        display: block; 
+        margin-bottom: 3px; 
+        text-decoration: none;
+        color: #503C3C;
+}
+footer .contact-info img {
+        width: 20px; 
+        margin-right: 5px; 
+}
+#medialogo{
+        display: flex;
+        justify-content: start;
+}
+#medialogo img{
+        width: 20px; 
+        margin-right: 5px; 
+}
+/*-----------------HOME PAGE--------------  */
+.welcome {
+        background-image: url("image/coffebackground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Set the height of the .welcome div to 100% of the viewport height */
+}
+.openbile{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 12rem;
+}
+.openbile div{
+        background-color: #FFF2D7;
+        padding: 40px;
+        border-radius: 20px;
+}
+.signature {
+        background-color: #D8AE7E;
+        height: 500px;
+}
+.signature_container {
+        display: flex;
+        justify-content: center;
+}
+.signature_card {
+        margin: 30px;
+        position: relative;
+}
+.signature_card img {
+        border: 10px solid #503C3C;
+        max-height: 340px;
+        border-radius: 20px;
+        max-width: 100%; /* Ensure the image scales properly within the card */
+        height: auto;    /* Maintain aspect ratio */
+        margin: auto;    /* Center the image */
+}
+
+/*  ----------------------------------Menu.html---------------------------------------- */
+.menu_page{
+        padding-top: 200px;
+        padding-bottom: 100px;
+}
+.tothecart a{
+        color: #FFF2D7;
+        font-size: 30px;
+        text-decoration: none;
+}
+.menu_navigation{
+        display: flex;
+        justify-content: center;
+}
+.search_side{
+        background-color: #FFF2D7;
+        border-radius: 10px;
+        padding: 10px;
+        flex: 1;
+}
+.item_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 5;
+}
+.item-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+}
+.item-grid-container div img{
+        width: 100px;
+}
+.container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: #FFF2D7;
+        border-radius: 10px;;
+        font-size: 15px;
+        
+        .imagecont{
+        display: flex;
+        justify-content: center;
+        }
+}
+/* ---------------------------------- */
+.imagecont {
+        position: relative;
+}
+    .desc {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: center;
+        transform: scale(0);
+        transition: 
+        transform .3s ease-out, 
+        opacity 0.5s ease-out, 
+        visibility 0.5s ease-out;
+    }
+    
+    .imagecont:hover .desc {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    .pricetag1 {
+        margin-left: 20px;
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .c1{
+        flex: 2;
+    }
+    .c2{
+        flex: 1;
+        display: flex;
+    }
+    .c2 button {
+        font-size: 1.5rem;
+        background-color: #FFF2D7;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        transition: transform 0.2s; /* Add transition for smooth effect */
+    }
+    .c2 button:hover {
+        transform: translateY(-6px); /* Move the button slightly up when hovered */
+    }
+
+
+
+
+/* -----------------------Online Order---------------------- */
+    .OO-container{
+        padding: 200px 20px 200px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .OO-container h1{
+        text-align: center;
+    }
+    .personal-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .personal-detail-1{
+        background-color: #FFF2D7;
+        padding: 4px;
+        border-radius: 20px;
+    }
+    /* ---------------- */
+    .cart-item{
+        background-color: #FFF2D7;
+        border-radius: 20px;
+    }
+    #total-price{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /* Responsive Styles */
+@media (max-width: 860px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+    .logo{
+        flex: 6;
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+    .hamburger {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    #footlogo{
+        display: none;
+    }
+
+    /* -------------Menu--------- */
+    .search_side{
+        display: none;
+    }
+    .container1 {
+        width: 100px;
+        gap: 5px;
+    }
+    .item-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* ---------------------Order--------------- */
+    .OO-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
