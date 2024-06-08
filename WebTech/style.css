@@ -115,7 +115,7 @@ footer .contact-info img {
 }
 /*-----------------HOME PAGE--------------  */
 .welcome {
-        background-image: url("image/coffebackground.jpg");
+        background-image: url("image/coffebackground3.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -125,38 +125,143 @@ footer .contact-info img {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-top: 12rem;
+        padding-top: 10rem;
 }
 .openbile div{
         background-color: #FFF2D7;
-        padding: 40px;
-        border-radius: 20px;
+        border-radius: 10px;
+        border: solid 2px #503C3C;
+}
+.quote-container {
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Apply a blur effect to the container */
+    padding: 0px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background to enhance readability */
+}
+
+.quote-container button {
+    background-color: #503C3C;
+    color: #FFF2D7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quote-container button:hover {
+    background-color: #FFF2D7;
+    color: #503C3C;
+}
+
+.quote {
+    font-size: 24px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    transition: opacity 0.5s;
 }
 .signature {
         background-color: #D8AE7E;
-        height: 500px;
+}
+.signature_tajuk1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative; 
+}
+
+.signature_tajuk1::before {
+    content: '';
+    position: absolute;
+    bottom: 10px; 
+    right: 0;
+    width: 0;
+    height: 5px; 
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.signature_tajuk1:hover::before {
+    width: 100%; 
+    left: 10;
+    right: auto; 
 }
 .signature_container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
 }
 .signature_card {
-        margin: 30px;
+    margin: 20px;
         position: relative;
 }
 .signature_card img {
-        border: 10px solid #503C3C;
+        border: 4px solid #503C3C;
         max-height: 340px;
         border-radius: 20px;
         max-width: 100%; /* Ensure the image scales properly within the card */
         height: auto;    /* Maintain aspect ratio */
         margin: auto;    /* Center the image */
 }
+.au{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.about_us{
+    background-color: #FFF2D7;
+    width: 1000px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.about_us h1,h2,h3,p,li {
+    margin: 20px;
+}
+.location{
+    padding: 10px;
 
+    display: flex;
+    justify-content: center;
+}
 /*  ----------------------------------Menu.html---------------------------------------- */
 .menu_page{
-        padding-top: 200px;
+        padding-top: 140px;
         padding-bottom: 100px;
+        background-image: url("image/coffebackground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+}
+.FandB{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.FandB a{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FFF2D7;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.FandB a.activemenu{
+    background-color: #D8AE7E;
+    color: #030303;
+    border-radius: 10px;
+}
+.FandB a:hover:not(.activemenu){
+    transition: background-color 0.3s, color 0.1s;
+    background-color: hsla(0, 0%, 62%, 0.651);
+    color: #503C3C;
+    border-radius: 5px;
 }
 .tothecart a{
         color: #FFF2D7;
@@ -181,7 +286,7 @@ footer .contact-info img {
 }
 .item-grid-container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
 }
 .item-grid-container div img{
@@ -196,11 +301,31 @@ footer .contact-info img {
         background-color: #FFF2D7;
         border-radius: 10px;;
         font-size: 15px;
-        
         .imagecont{
         display: flex;
         justify-content: center;
         }
+}
+.pagination{
+    text-align: center;
+    padding-top: 30px;
+}
+.pagination a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: larger;
+    padding: 8px 15px;
+}
+.pagination a.activepagin{
+    background-color: #FFF2D7;
+    color: #503C3C;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pagination a:hover:not(.activepagin){
+    background-color: hsl(0,0%,66%);
+    color: #503C3C;
+    border-radius: 5px;
 }
 /* ---------------------------------- */
 .imagecont {
@@ -258,9 +383,6 @@ footer .contact-info img {
         transform: translateY(-6px); /* Move the button slightly up when hovered */
     }
 
-
-
-
 /* -----------------------Online Order---------------------- */
     .OO-container{
         padding: 200px 20px 200px 20px;
@@ -294,6 +416,8 @@ footer .contact-info img {
         font-weight: 600;
     }
     /* Responsive Styles */
+    
+
 @media (max-width: 860px) {
     .navbar {
         display: none;
@@ -331,11 +455,11 @@ footer .contact-info img {
     }
 
     /* -------------Menu--------- */
-    .search_side{
-        display: none;
+    .menu_page{
+        padding-bottom: 200px;
     }
     .container1 {
-        width: 100px;
+        width: 200px;
         gap: 5px;
     }
     .item-grid-container{
@@ -343,9 +467,25 @@ footer .contact-info img {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+    /* ---------------location-------------------- */
+    .alilocation{
+        width: 340px;
+    }
     /* ---------------------Order--------------- */
     .OO-container{
         display: flex;
         flex-direction: column-reverse;
+    }
+}
+@media (max-width: 680px) {
+    .menu_page{
+        .item-grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+    }
+    }
+    .container1{
+        max-width: 170px;
     }
 }
