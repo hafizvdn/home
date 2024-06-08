@@ -19,12 +19,12 @@
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="Home.html" class="nav-link">Home</a></li>
-                <li><a href="menu.html" class="nav-link">Menu</a></li>
-                <li><a href="promotion.html" class="nav-link">Promotion</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="order.html" class="nav-link">Order Online</a></li>
+                <li><a href="Home.html" class="">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="promotion.html" class="">Promotion</a></li>
+                <li><a href="about.html" class="">About Us</a></li>
+                <li><a href="contact.html" class="">Contact</a></li>
+                <li><a href="order.html" class="">Order Online</a></li>
             </ul>
         </div>
         <div class="hamburger" id="hamburger">
@@ -33,147 +33,137 @@
             <span></span>
         </div>
     </nav>
-    
+
     <section class="menu_page">
+        <div class="FandB">
+            <a href="menu.html" class="activemenu">Drinks</a>
+            <a href="menu4.html">Foods</a>
+        </div>
         <div class="menu_navigation">
-            <!-- <div class="search_side">
-                    <div>
-                        <li><a href="#" id="popular-link">Popular</a></li>
-                        <li><a href="#" id="sets-link">Sets</a></li>
-                        <li><a href="#" id="foods-link">Foods</a></li>
-                        <li><a href="#" id="drinks-link">Drinks</a></li>
-                    </div>
-            </div> -->
             <div class="item_container">
                 <div class="item-grid-container">
                     <div class="container1">
                         <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe1.png" alt="">
+                            <p class="desc">A concentrated shot of coffee with a rich, intense flavor.</p>
+                            <img src="image/Espresso.png" alt="">
                         </div>
                         <div class="pricetag1">
                             <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
+                                <strong id="coffe">Espresso </strong><span id="price"><br>RM5.00</span>
                             </div>
                             <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                                <button onclick="addToCart('Espresso ', 5.00)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="container1">
                         <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
+                            <p class="desc">A diluted espresso with hot water, resulting in a smooth, bold taste.</p>
+                            <img src="image/Americano.png" alt="">
+                        </div>
+                        <div class="pricetag1">
+                            <div class="c1">
+                                <strong id="coffe">Americano </strong><span id="price"><br>RM6.00</span>
+                            </div>
+                            <div class="c2">
+                                <button onclick="addToCart('Americano', 6.00)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="imagecont">
+                            <p class="desc">A creamy espresso-based drink with steamed milk and a light foam layer.</p>
+                            <img src="image/Latte.png" alt="">
+                        </div>
+                        <div class="pricetag1">
+                            <div class="c1">
+                                <strong id="coffe">Latte </strong><span id="price"><br>RM8.00</span>
+                            </div>
+                            <div class="c2">
+                                <button onclick="addToCart('Latte', 8.00)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="imagecont">
+                            <p class="desc">An espresso-based drink with equal parts of espresso, steamed milk, and milk foam.</p>
+                            <img src="image/Cappuccino.png" alt="">
+                        </div>
+                        <div class="pricetag1">
+                            <div class="c1">
+                                <strong id="coffe">Cappuccino </strong><span id="price"><br>RM8.50</span>
+                            </div>
+                            <div class="c2">
+                                <button onclick="addToCart('Cappuccino ', 8.50)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="imagecont">
+                            <p class="desc">A delightful combination of espresso, steamed milk, and chocolate syrup, topped with whipped cream.</p>
+                            <img src="image/coffe1.png" alt="">
+                        </div>
+                        <div class="pricetag1">
+                            <div class="c1">
+                                <strong id="coffe">Mocha</strong><span id="price"><br>RM9.00</span>
+                            </div>
+                            <div class="c2">
+                                <button onclick="addToCart('Mocha', 9.00)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="imagecont">
+                            <p class="desc">A shot of espresso "stained" with a dollop of frothy milk.</p>
                             <img src="image/coffe2.png" alt="">
                         </div>
                         <div class="pricetag1">
                             <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
+                                <strong id="coffe">Macchiato </strong><span id="price"><br>RM7.50</span>
                             </div>
                             <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                                <button onclick="addToCart('Macchiato ', 7.50)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="container1">
                         <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
+                            <p class="desc">Similar to a latte but with a higher ratio of coffee to milk, offering a stronger flavor.</p>
                             <img src="image/coffe1.png" alt="">
                         </div>
                         <div class="pricetag1">
                             <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
+                                <strong id="coffe">Flat White</strong><span id="price"><br>RM8.50</span>
                             </div>
                             <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                                <button onclick="addToCart('Flat White', 8.50)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="container1">
                         <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
+                            <p class="desc">A short shot of espresso made with less water, resulting in a more intense flavor.</p>
                             <img src="image/coffe2.png" alt="">
                         </div>
                         <div class="pricetag1">
                             <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
+                                <strong id="coffe">Ristretto </strong><span id="price"><br>RM6.50</span>
                             </div>
                             <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                                <button onclick="addToCart('Ristretto ', 6.50)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="container1">
-                        <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe1.png" alt="">
-                        </div>
-                        <div class="pricetag1">
-                            <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
-                            </div>
-                            <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container1">
-                        <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe2.png" alt="">
-                        </div>
-                        <div class="pricetag1">
-                            <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
-                            </div>
-                            <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container1">
-                        <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe1.png" alt="">
-                        </div>
-                        <div class="pricetag1">
-                            <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
-                            </div>
-                            <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container1">
-                        <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe2.png" alt="">
-                        </div>
-                        <div class="pricetag1">
-                            <div class="c1">
-                                <strong id="coffe">coffee</strong><span id="price"><br>RM4.99</span>
-                            </div>
-                            <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container1">
-                        <div class="imagecont">
-                            <p class="desc">This is a delicious coffee made from the finest beans.</p>
-                            <img src="image/coffe1.png" alt="">
-                        </div>
-                        <div class="pricetag1">
-                            <div class="c1">
-                                <strong >coffee</strong><span><br>RM4.99</span>
-                            </div>
-                            <div class="c2">
-                                <button onclick="addToCart('Coffee', 4.99)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
+        </div>
+        <div class="pagination">
+            <a href="menu.html"><</a>
+            <a href="menu.html" class="activepagin">1</a>
+            <a href="menu2.html">2</a>
+            <a href="menu3.html">3</a>
+            <a href="menu2.html">></a>
         </div>
         
     </section>
